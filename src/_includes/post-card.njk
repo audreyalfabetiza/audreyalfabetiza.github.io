@@ -1,8 +1,0 @@
-<article class="post-card">
-  {% if p.data.imagem %}<a class="post-img" href="{{ p.url }}" tabindex="-1" aria-hidden="true">{% img p.data.imagem, p.data.imagem_alt or p.data.title, "(max-width: 700px) 100vw, 360px" %}</a>{% endif %}
-  <div class="post-body">
-    <div class="post-meta"><time datetime="{{ p.date | iso }}">{{ p.date | dataBR }}</time>{% if p.data.categoria %} · {{ p.data.categoria }}{% endif %}</div>
-    <h3><a href="{{ p.url }}">{{ p.data.title }}</a></h3>
-    <p>{{ p.data.description }}</p>
-  </div>
-</article>
