@@ -1,0 +1,11 @@
+[
+  { "texto": "Início", "url": "/" },
+  { "texto": "Para crianças", "url": "/para-criancas/" },
+  { "texto": "Para famílias", "url": "/para-familias/" },
+  { "texto": "Para professores", "url": "/para-professores/" },
+  { "texto": "Ciência da Leitura", "url": "/ciencia-da-leitura/" },
+  { "texto": "Conteúdos", "url": "/conteudos/" },
+  { "texto": "Perguntas frequentes", "url": "/perguntas-frequentes/" },
+  { "texto": "Sobre mim", "url": "/sobre/" },
+  { "texto": "Contato", "url": "/contato/" }
+]

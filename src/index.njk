@@ -1,0 +1,108 @@
+---
+layout: base.njk
+permalink: /
+title: "Audrey Americano | Alfabetização em Curitiba para crianças de 4 a 11 anos"
+description: "Pedagoga alfabetizadora em Curitiba (Mercês). Atendimento individualizado e presencial para crianças de 4 a 11 anos e orientação online para pais e professores, baseado na Ciência Cognitiva da Leitura."
+---
+<section class="hero" aria-labelledby="h-hero">
+      <div class="wrap">
+        <div>
+          <div class="eyebrow">{{ site.cidade }} · Crianças de 4 a 11 anos</div>
+          <h1 id="h-hero">Alfabetização que entende <em>como a criança aprende</em> a ler.</h1>
+          <p class="lead">Atendimento pedagógico individualizado e presencial para crianças de 4 a 11 anos, em Curitiba.</p>
+          <ul>
+            <li>Orientação online para pais e professores.</li>
+            <li>Um trabalho fundamentado na Ciência Cognitiva da Leitura, claro e sistemático.</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="{{ meta.wa.conversa }}" target="_blank" rel="noopener">Agendar uma conversa</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <div class="frame"><img src="/assets/img/audrey.jpg" alt="Audrey Americano, pedagoga alfabetizadora em Curitiba" width="382" height="510" fetchpriority="high"></div>
+          <figcaption class="tag"><b>Audrey Americano</b>Pedagoga alfabetizadora</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="h-ajuda" style="padding-top:20px">
+      <div class="wrap">
+        <div class="head">
+          <div class="kicker">Como posso ajudar?</div>
+          <h2 id="h-ajuda">Escolha o caminho que se parece com o seu</h2>
+        </div>
+        <div class="paths">
+          <article class="path">
+            <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h7z"/></svg></div>
+            <div class="who">Para crianças</div>
+            <h3>Acompanhamento pedagógico individualizado</h3>
+            <p>Para crianças que estão desenvolvendo habilidades importantes para a alfabetização, aprendendo a ler e escrever ou que já leem, mas precisam avançar em fluência, ortografia, morfologia e compreensão.</p>
+            <div class="push"></div>
+            <a class="btn btn-primary" href="/para-criancas/">Conhecer</a>
+          </article>
+          <article class="path">
+            <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+            <div class="who">Para famílias</div>
+            <h3>Você quer alfabetizar seu filho em casa, mas não sabe por onde começar?</h3>
+            <p>Orientação para pais que desejam assumir um papel ativo na alfabetização dos filhos. Eu oriento. Você conduz a aprendizagem em casa.</p>
+            <div class="push"></div>
+            <a class="btn btn-primary" href="/para-familias/">Conhecer</a>
+          </article>
+          <article class="path">
+            <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M7 9h6M7 12h9"/></svg></div>
+            <div class="who">Para professores</div>
+            <h3>Você quer alfabetizar com base na ciência, mas ainda não se sente seguro?</h3>
+            <p>Orientação e supervisão pedagógica para professores alfabetizadores.</p>
+            <div class="push"></div>
+            <a class="btn btn-primary" href="/para-professores/">Conhecer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+{% if depoimentos.itens.length %}
+<section class="sky" aria-labelledby="h-dep">
+  <div class="wrap">
+    <div class="head"><div class="kicker">Depoimentos</div><h2 id="h-dep">O que as famílias dizem</h2>
+      {% if site.google_avaliacoes %}<p><a href="{{ site.google_avaliacoes }}" target="_blank" rel="noopener">Ver as avaliações no Google</a></p>{% endif %}
+    </div>
+    <div class="quotes">
+      {% for d in depoimentos.itens %}
+      <figure class="quote-card">
+        <blockquote>{{ d.texto }}</blockquote>
+        <figcaption><b>{{ d.nome }}</b>{% if d.relacao %}<span>{{ d.relacao }}</span>{% endif %}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section aria-labelledby="h-onde">
+  <div class="wrap">
+    <div class="head"><div class="kicker">Onde atendo</div><h2 id="h-onde">Alfabetização presencial em {{ site.cidade }}, bairro {{ site.bairro }}</h2>
+      <p>Atendimento presencial para crianças de 4 a 11 anos em {{ site.bairro }}, {{ site.cidade }}{% if site.bairros_proximos.length %}, para famílias de {{ site.bairros_proximos | join(", ") }} e região{% endif %}. Orientação online para pais e professores de todo o Brasil.</p></div>
+    <div class="where">
+      <div class="info">
+        <dl>
+          <div><dt>Endereço</dt><dd>{{ site.rua }}<br>{{ site.bairro }}, {{ site.cidade }}, {{ site.estado }}<br>CEP {{ site.cep }}</dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">{{ site.telefone }}</a></dd></div>
+        </dl>
+        <div class="cta" style="margin-top:22px">
+          <a class="btn btn-primary" href="{{ site.mapa }}" target="_blank" rel="noopener">Ver no mapa</a>
+          {% if site.waze %}<a class="btn btn-ghost" href="{{ site.waze }}" target="_blank" rel="noopener">Abrir no Waze</a>{% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if collections.posts.length %}
+<section class="sky" aria-labelledby="h-rec">
+  <div class="wrap">
+    <div class="head"><div class="kicker">Conteúdos</div><h2 id="h-rec">Para ler com calma</h2></div>
+    <div class="post-grid">
+      {% for p in collections.posts | limit(3) %}{% include "post-card.njk" %}{% endfor %}
+    </div>
+    <div class="cta"><a class="btn btn-ghost" href="/conteudos/">Ver todos os conteúdos</a></div>
+  </div>
+</section>
+{% endif %}

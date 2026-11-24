@@ -1,0 +1,15 @@
+{
+  "itens": [
+    { "pergunta": "Como funciona a conversa inicial?", "resposta": "É uma conversa por vídeo, de aproximadamente 30 minutos, sem custo. Os pais contam o que estão observando e o que os levou a procurar ajuda. Não é uma avaliação da criança: serve para compreender a demanda e verificar se o trabalho é adequado para a família." },
+    { "pergunta": "Quantos encontros tem a avaliação pedagógica?", "resposta": "Em geral, de 3 a 4 encontros, podendo variar conforme a idade, o perfil e as necessidades da criança. A avaliação é individualizada." },
+    { "pergunta": "A criança é atendida online?", "resposta": "O atendimento às crianças é presencial, em Curitiba. A orientação para pais e professores é online." },
+    { "pergunta": "Quais idades a Audrey atende?", "resposta": "Crianças de 4 a 11 anos. O ensino se baseia no que a criança já sabe, e não apenas na idade ou na série escolar." },
+    { "pergunta": "Atende crianças com diferentes perfis de aprendizagem?", "resposta": "Sim. O atendimento é individualizado e voltado a crianças com diferentes perfis de aprendizagem, típicas e atípicas." },
+    { "pergunta": "Qual a frequência das aulas, os valores e os horários?", "resposta": "A frequência e a modalidade são indicadas depois da avaliação e da devolutiva, de acordo com os objetivos definidos para a criança. Valores e horários são combinados pelo WhatsApp." },
+    { "pergunta": "É reforço escolar?", "resposta": "Não. O trabalho é de alfabetização: pré-alfabetização, alfabetização e aperfeiçoamento da leitura e da escrita." },
+    { "pergunta": "O que é a Ciência Cognitiva da Leitura?", "resposta": "É a área que reúne as pesquisas sobre como o cérebro aprende a ler e escrever e sobre o que funciona no ensino. Dela vem a base do trabalho: ensino explícito, sistemático e progressivo das habilidades necessárias para ler e escrever." },
+    { "pergunta": "O que é consciência fonêmica?", "resposta": "É a capacidade de perceber e manipular os menores sons da fala, os fonemas. Por exemplo, perceber que a palavra \"sol\" tem três sons: /s/, /o/ e /l/. É uma das habilidades que mais ajudam a criança a aprender a ler." },
+    { "pergunta": "O que são decodificação e codificação?", "resposta": "Decodificar é transformar as letras escritas nos sons que elas representam, para ler a palavra. Codificar é o caminho contrário: transformar os sons da fala em letras, para escrever." },
+    { "pergunta": "Onde fica o atendimento presencial?", "resposta": "No bairro Mercês, em Curitiba, na R. Edmundo Saporski, 272." }
+  ]
+}
